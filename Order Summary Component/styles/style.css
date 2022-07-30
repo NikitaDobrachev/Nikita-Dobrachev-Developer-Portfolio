@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: var(--font-family);
+	box-sizing: border-box;
+}
+
+:root {
+	--font-primary: hsl(225, 100%, 94%);
+	--font-bright: hsl(245, 75%, 52%);
+	--font-pale: hsl(225, 100%, 98%);
+	--font-desaturated: hsl(224, 23%, 55%);
+	--font-dark: hsl(223, 47%, 23%);
+	--font-size-normal: 16px;
+	--font-family: 'Red Hat Display', sans-serif;
+	--background-image-desktop: url("https://svgshare.com/i/iXh.svg");
+	--background-image-mobile: url("https://svgshare.com/i/iVP.svg");
+}
+
+body {
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: var(--font-primary);
+	background-image: var(--background-image-desktop);
+}
+
+a {
+	font-style: normal;
+	text-decoration: none;
+	color: black;
+}
+
+h2	{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: 900;
+	font-size: 23px;
+	color: var(--font-bright);
+}
+
+p {
+	font-size: var(--font-size-normal);
+	font-weight: 500;
+	color: var(--font-desaturated);
+	margin-bottom: 15px;
+}
+
+.widget {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 15px;
+	width: 400px;
+	margin-top: 150px;
+	background-color: white;
+	filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.1));
+}
+
+.widgetImage {
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+}
+
+.widgetContent {
+	padding: 30px;
+}
+
+.widgetHeading {
+	margin-top: 0;
+	color: var(--font-dark);
+}
+
+.summary {
+	background-color: var(--font-pale);
+	width: 100%;
+	padding: 20px;
+	border-radius: 7px;
+	margin-bottom: 15px;
+	vertical-align: center;
+}
+
+.summaryIcon {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	position: relative;
+	left: -50px;
+}
+
+.summaryInfoHeading {
+	font-weight: 700;
+	color: var(--font-dark);
+}
+
+.summaryInfo {
+	position: relative;
+	left: -40px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.summaryInfoPrice {
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.summaryChange {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	right: -45px;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+.summaryChange a {
+	color: var(--font-bright);
+	font-weight: 700;
+}
+
+.summaryChange:hover {
+	text-decoration: none;
+	font-style: normal;
+}
+
+.summaryChange a:hover {
+	color: hsl(245, 95%, 72%);
+}
+
+.purchaseButton {
+	width: 100%;
+	padding: 16px;
+	border-radius: 12px;
+	border: none;
+	margin-bottom: 16px;
+	background-color: var(--font-bright);
+	color: white;
+	filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.2));
+	display: block;
+	font-weight: 700;
+	text-shadow: 0 0 1px;
+}
+
+.purchaseButton:hover {
+	background-color: hsl(245, 95%, 72%);
+}
+
+.cancelButton {
+	color: var(--font-desaturated);
+	font-weight: 700;
+}
+
+.cancelButton:hover {
+	color: var(--font-dark);
+}
+
+@media only screen and (max-width: 376px) {
+	.widget {
+		margin-top: 75px;
+	}
+}
