@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  background: no-repeat
+    linear-gradient(
+      to bottom,
+      var(--background-color-1) 0%,
+      var(--background-color-2) 75%
+    );
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+:root {
+  --background-color-1: hsl(273, 75%, 66%);
+  --background-color-2: hsl(240, 73%, 65%);
+  --font-color-standart: hsl(240, 6%, 50%);
+  --font-color-special: hsl(237, 12%, 33%);
+  --font-size-standart: 12px;
+}
+
+html,
+body {
+  height: 200vh;
+}
+
+h2 {
+  margin-bottom: 36px;
+  color: var(--font-color-special);
+  font-size: 36px;
+}
+
+.widget {
+  width: 900px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 525px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 20px 30px -15px hsla(0, 100%, 1%, 0.5);
+}
+
+.widgetContent {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-areas: 'pictures accordion';
+  border-radius: 15px;
+  padding: 45px;
+}
+
+#illustrationWoman {
+  position: relative;
+  top: 30px;
+  right: 130px;
+  z-index: 1;
+}
+
+#illustrationBox {
+  position: relative;
+  z-index: 2;
+  top: -1193px;
+  left: -130px;
+}
+
+#illustrationBackground {
+  position: relative;
+  z-index: 0;
+  top: -687px;
+  left: -620px;
+}
+
+.widget #faq {
+  grid-area: accordion;
+  padding: 0px 60px 30px 60px;
+}
+
+.widget .pictures {
+  grid-area: pictures;
+}
+
+.widget .hidecontent {
+  display: none;
+}
+
+.widget .content {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#accordionContent label {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: var(--font-color-special);
+  font-size: 15px;
+}
+
+.content-info input:checked + label + .content {
+  display: block;
+  transition: height 1s;
+}
+
+.content p {
+  font-size: var(--font-size-standart);
+  color: var(--font-color-standart);
+}
+
+#accordionContent hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid hsl(240, 5%, 91%);
+  box-shadow: 0px 0.5px 0.5px -0.5px hsla(0, 100%, 1%, 0.1);
+}
+
+.content-info {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
