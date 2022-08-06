@@ -1,67 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<title>FAQ Accordion Card Hub</title>
-	<link rel="stylesheet" type="text/css" href="https://github.com/jgthms/minireset.css/blob/master/minireset.css">
-	<link href="./styles/style.css" rel="stylesheet" type="text/css">
-<body>
-	<section class="widget">
-		<section class="widgetContent">
-			<article class="pictures">
-				<embed id="illustrationWoman" src="./images/illustration-woman-online-desktop.svg"></embed>
-				<embed id="illustrationBackground" src="./images/bg-pattern-desktop.svg"></embed>
-			</article>
-			<article id="faq">
-				<h2>FAQ</h2>
-				<section id="accordionContent">
-					<article class="content-info">
-						<input type="checkbox" id="info1" class="hidecontent">
-						<label for="info1">How many team members can I invite?</label><img class="accordionArrow" src="./images/icon-arrow-down.svg"/>
-					</article>
-					<article class="content hidecontent">
-						<p>You can invite up to 2 additional users on the Free plan.</p>
-						<p>There is no limit on team members for the Premium plan.</p>
-					</article>
-					<hr>
-					<article class="content-info">
-						<input type="checkbox" id="info2" class="hidecontent">
-						<label for="info2">What is the maximum file upload size?</label><img class="accordionArrow" src="./images/icon-arrow-down.svg"/>
-					</article>
-					<article class="content hidecontent">
-						<p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-					</article>
-					<hr>
-	  			<article class="content-info">
-						<input type="checkbox" id="info3" class="hidecontent">
-						<label for="info3">How do I reset my password?</label><img class="accordionArrow" src="./images/icon-arrow-down.svg"/>
-					</article>
-					<article class="content hidecontent">
-						<p>Click “Forgot password” from the login page or “Change password” from your profile page.</p>
-						<p>A reset link will be emailed to you.</p>
-					</article>
-					<hr>
-					<article class="content-info">
-						<input type="checkbox" id="info4" class="hidecontent">
-						<label for="info4">Can I cancel my subscription?</label><img class="accordionArrow" src="./images/icon-arrow-down.svg"/>
-					</article>
-					<article class="content hidecontent">
-						<p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-					</article>
-					<hr>
-					<article class="content-info">
-						<input type="checkbox" id="info5" class="hidecontent">
-						<label for="info5">Do you provide additional support?</label><img class="accordionArrow" src="./images/icon-arrow-down.svg"/>
-					</article>
-					<article class="content hidecontent">
-						<p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-					</article>
-					<hr>
-	  		</section>
-			</article>
-		</section>
-		<embed id="illustrationBox" src="./images/illustration-box-desktop.svg"></embed>
-	</section>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>FAQ Accordion Card Hub</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://github.com/jgthms/minireset.css/blob/master/minireset.css"
+    />
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+    <body>
+      <article class="widget">
+        <div class="widgetContent">
+          <div class="pictures">
+            <img
+              id="illustrationWoman"
+              src="./images/illustration-woman-online-desktop.svg"
+            />
+          </div>
+          <section id="faq">
+            <h2>FAQ</h2>
+            <details class="content-info">
+              <summary>
+                How many team members can I invite?<img
+                  class="accordionArrow"
+                  src="./images/icon-arrow-down.svg"
+                />
+              </summary>
+              <p>You can invite up to 2 additional users on the Free plan.</p>
+              <p>There is no limit on team members for the Premium plan.</p>
+            </details>
+            <hr />
+            <details class="content-info">
+              <summary>
+                What is the maximum file upload size?<img
+                  class="accordionArrow"
+                  src="./images/icon-arrow-down.svg"
+                />
+              </summary>
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </details>
+            <hr />
+            <details class="content-info">
+              <summary>
+                How do I reset my password?<img
+                  class="accordionArrow"
+                  src="./images/icon-arrow-down.svg"
+                />
+              </summary>
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page.
+              </p>
+              <p>A reset link will be emailed to you.</p>
+            </details>
+            <hr />
+            <details class="content-info">
+              <summary>
+                Can I cancel my subscription?<img
+                  class="accordionArrow"
+                  src="./images/icon-arrow-down.svg"
+                />
+              </summary>
+              <p>
+                Yes! Send us a message and we`ll process your request no
+                questions asked.
+              </p>
+            </details>
+            <hr />
+            <details class="content-info">
+              <summary for="info5">
+                Do you provide additional support?<img
+                  class="accordionArrow"
+                  src="./images/icon-arrow-down.svg"
+                />
+              </summary>
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </details>
+            <hr />
+          </section>
+        </div>
+        <img
+        id="illustrationBox"
+        src="./images/illustration-box-desktop.svg"
+        alt="Box"
+      />
+      </article>
+      <script src="./js/script.js"></script>
+    </body>
+  </head>
+</html>
